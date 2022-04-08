@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.row{
+  display:flex;
+  justify-content:flex-start;
+  align-items:stretch;
+  flex-wrap:nowrap;
+  padding:10px;
+}
+.cell{
+  min-height:75px;
+  flex-grow:1;
+  flex-basis:100%;
+}
+#idsfj{
+  color:black;
+  width:225px;
+  height:225px;
+  position:relative;
+  display:block;
+  float:left;
+  align-self:center;
+  justify-content:space-between;
+}
+#i4mfj{
+  padding:10px;
+}
+#i66cv{
+  padding:10px;
+}
+#irh5y{
+  padding:10px;
+}
+#ibx3l{
+  padding:10px;
+}
+.navbar-items-c{
+  display:inline-block;
+  float:right;
+}
+.navbar{
+  background-color:#222;
+  color:#ddd;
+  min-height:50px;
+  width:100%;
+}
+.navbar-container{
+  max-width:950px;
+  margin:0 auto;
+  width:95%;
+}
+.navbar-container::after{
+  content:"";
+  clear:both;
+  display:block;
+}
+.navbar-brand{
+  vertical-align:top;
+  display:inline-block;
+  padding:5px;
+  min-height:50px;
+  min-width:50px;
+  color:inherit;
+  text-decoration:none;
+}
+.navbar-menu{
+  padding:10px 0;
+  display:block;
+  float:right;
+  margin:0;
+}
+.navbar-menu-link{
+  margin:0;
+  color:inherit;
+  text-decoration:none;
+  display:inline-block;
+  padding:10px 15px;
+}
+.navbar-burger{
+  margin:10px 0;
+  width:45px;
+  padding:5px 10px;
+  display:none;
+  float:right;
+  cursor:pointer;
+}
+.navbar-burger-line{
+  padding:1px;
+  background-color:white;
+  margin:5px 0;
+}
+#i9ld2{
+  padding:10px;
+}
+@media (max-width: 768px){
+  .row{
+    flex-wrap:wrap;
+  }
+  .navbar-burger{
+    display:block;
+  }
+  .navbar-items-c{
+    display:none;
+    width:100%;
+  }
+  .navbar-menu{
+    width:100%;
+  }
+  .navbar-menu-link{
+    display:block;
+  }
+}
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(99, 38, 3);
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(99, 38, 3);
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.row{
+  display:flex;
+  justify-content:flex-start;
+  align-items:stretch;
+  flex-wrap:nowrap;
+  padding:10px;
+}
+.cell{
+  min-height:75px;
+  flex-grow:1;
+  flex-basis:100%;
+}
+#i07gq{
+  flex-basis:30%;
+}
+#ijbi3{
+  flex-basis:70%;
+}
+#i48yl{
+  padding:10px;
+}
+#ips0j{
+  padding:10px;
+}
+#i4ny1{
+  padding:10px;
+}
+#i3wuu{
+  padding:10px;
+}
+#ilkg2{
+  padding:10px;
+}
+#iyeyb{
+  padding:10px;
+}
+#imcyu{
+  padding:10px;
+}
+#iftl8{
+  padding:10px;
+}
+#i0aw4{
+  padding:10px;
+}
+#i3ggg{
+  padding:10px;
+}
+#izznl{
+  padding:10px;
+}
+#i5afd{
+  padding:10px;
+}
+#ilaik{
+  padding:10px;
+}
+#ijnhh{
+  padding:10px;
+}
+#ido5l{
+  padding:10px;
+}
+#i4oaq{
+  padding:10px;
+}
+#i7cedx{
+  padding:10px;
+}
+#iah5l1{
+  padding:10px;
+}
+#imif6n{
+  padding:10px;
+}
+#iiq3cu{
+  padding:10px;
+}
+#i4gk49{
+  padding:10px;
+}
+#i5pwgg{
+  padding:10px;
+}
+#ifhxif{
+  padding:10px;
+}
+#iq1ohs{
+  padding:10px;
+}
+#i8d3tc{
+  padding:10px;
+}
+#i3hxk5{
+  padding:10px;
+}
+#ip8my2{
+  padding:10px;
+}
+#i9rt8i{
+  padding:10px;
+}
+#ilwt7u{
+  padding:10px;
+}
+#iyyf19{
+  padding:10px;
+}
+@media (max-width: 768px){
+  .row{
+    flex-wrap:wrap;
+  }
+}
+
+  </style>
+<body id="i04l">
+  <div data-gjs="navbar" class="navbar" id="ik6y5">
+    <div class="navbar-container" id="idpql">
+      <a href="/" class="navbar-brand" id="i9n4i">Personal Details</a>
+      <div id="ine4f" class="navbar-burger">
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+      </div>
+      <div data-gjs="navbar-items" class="navbar-items-c">
+        <nav data-gjs="navbar-menu" class="navbar-menu">
+          <div class="subnav">
+            <button class="subnavbtn">My Profile <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="personal.html">Personal</a>
+              <a href="family.html">Family</a>
+              <a href="medical.html">Medical</a>
+              <a href="legal.html">Legal Documents</a>
+              <a href="tandc.html">Terms</a>
+
+
+
+            </div>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">Requests <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="#company">Loan</a>
+              <a href="#team">Leave</a>
+              <a href="#careers">Passport</a>
+            </div>
+          </div>
+          <a href="#" class="navbar-menu-link" id="i2wah">Notifications</a>
+          <div class="subnav">
+            <button class="subnavbtn">Reports <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="#company">Attendance</a>
+              <a href="#team">Salary Outstanding</a>
+              <a href="#careers">Praise</a>
+              <a href="#careers">Warnings</a>
+              <a href="#careers">Leaves approved</a>
+              <a href="#careers">Passport</a>
+              <a href="#careers">Loans</a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  </html>
+
+
+
+
+<body id="i04l">
+    <div class="row">
+      <div class="cell" id="i07gq">
+        <div id="i48yl">Name:
+        </div>
+        <div id="ips0j">Middle Name: 
+        </div>
+        <div id="i4ny1">Last Name:
+        </div>
+        <div id="i3wuu">Employee Reg. No.: 
+        </div>
+        <div id="ilkg2">D.O.B.:
+        </div>
+        <div id="iyeyb">Gender:
+        </div>
+        <div id="imcyu">Religion:
+        </div>
+        <div id="iftl8">Ethnic Group:
+        </div>
+        <div id="i0aw4">Nationality:
+          <br/>
+        </div>
+        <div id="i3ggg">Passport No.:
+        </div>
+        <div id="izznl">Address:
+        </div>
+        <div id="i5afd">Marital Status:
+        </div>
+        <div id="ilaik">Profession:
+        </div>
+        <div id="ijnhh">Mobile No:
+        </div>
+        <div id="ido5l">Email Id:
+        </div>
+        <div id="ido5l">Resume/CV File:
+        </div>
+        <div id="ido5l">Your Future Goals in Company:
+        </div>
+      </div>
+      <div class="cell" id="ijbi3">
+        <div id="i4oaq">Insert your text here
+        </div>
+        <div id="iyyf19">Insert your text here
+        </div>
+        <div id="ilwt7u">Insert your text here
+        </div>
+        <div id="i9rt8i">Insert your text here
+        </div>
+        <div id="ip8my2">Insert your text here
+        </div>
+        <div id="i3hxk5">Insert your text here
+        </div>
+        <div id="i8d3tc">Insert your text here
+        </div>
+        <div id="iq1ohs">Insert your text here
+        </div>
+        <div id="ifhxif">Insert your text here
+        </div>
+        <div id="i5pwgg">Insert your text here
+        </div>
+        <div id="i4gk49">Insert your text here
+        </div>
+        <div id="iiq3cu">Insert your text here
+        </div>
+        <div id="imif6n">Insert your text here
+        </div>
+        <div id="iah5l1">Insert your text here
+        </div>
+        <div id="i7cedx">Insert your text here
+        </div>
+        <div id="i7cedx">Insert your text here
+        </div>
+        <div id="i7cedx">Insert your text here
+        </div>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.row{
+  display:flex;
+  justify-content:flex-start;
+  align-items:stretch;
+  flex-wrap:nowrap;
+  padding:10px;
+}
+.cell{
+  min-height:75px;
+  flex-grow:1;
+  flex-basis:100%;
+}
+#idsfj{
+  color:black;
+  width:225px;
+  height:225px;
+  position:relative;
+  display:block;
+  float:left;
+  align-self:center;
+  justify-content:space-between;
+}
+#i4mfj{
+  padding:10px;
+}
+#i66cv{
+  padding:10px;
+}
+#irh5y{
+  padding:10px;
+}
+#ibx3l{
+  padding:10px;
+}
+.navbar-items-c{
+  display:inline-block;
+  float:right;
+}
+.navbar{
+  background-color:#222;
+  color:#ddd;
+  min-height:50px;
+  width:100%;
+}
+.navbar-container{
+  max-width:950px;
+  margin:0 auto;
+  width:95%;
+}
+.navbar-container::after{
+  content:"";
+  clear:both;
+  display:block;
+}
+.navbar-brand{
+  vertical-align:top;
+  display:inline-block;
+  padding:5px;
+  min-height:50px;
+  min-width:50px;
+  color:inherit;
+  text-decoration:none;
+}
+.navbar-menu{
+  padding:10px 0;
+  display:block;
+  float:right;
+  margin:0;
+}
+.navbar-menu-link{
+  margin:0;
+  color:inherit;
+  text-decoration:none;
+  display:inline-block;
+  padding:10px 15px;
+}
+.navbar-burger{
+  margin:10px 0;
+  width:45px;
+  padding:5px 10px;
+  display:none;
+  float:right;
+  cursor:pointer;
+}
+.navbar-burger-line{
+  padding:1px;
+  background-color:white;
+  margin:5px 0;
+}
+#i9ld2{
+  padding:10px;
+}
+@media (max-width: 768px){
+  .row{
+    flex-wrap:wrap;
+  }
+  .navbar-burger{
+    display:block;
+  }
+  .navbar-items-c{
+    display:none;
+    width:100%;
+  }
+  .navbar-menu{
+    width:100%;
+  }
+  .navbar-menu-link{
+    display:block;
+  }
+}
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(99, 38, 3);
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(99, 38, 3);
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .row{
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    padding:10px;
+  }
+  .cell{
+    min-height:75px;
+    flex-grow:1;
+    flex-basis:100%;
+  }
+  #i9m4d{
+    flex-basis:30%;
+  }
+  #ifu6e{
+    flex-basis:70%;
+  }
+  #i08d7{
+    padding:10px;
+  }
+  #ihhwb{
+    padding:10px;
+  }
+  #irail{
+    padding:10px;
+  }
+  #i02mg{
+    padding:10px;
+  }
+  #ix4ye{
+    padding:10px;
+  }
+  .countdown{
+    text-align:center;
+    font-family:Helvetica, serif;
+  }
+  .countdown-block{
+    display:inline-block;
+    margin:0 10px;
+    padding:10px;
+  }
+  .countdown-digit{
+    font-size:5rem;
+  }
+  .countdown-endtext{
+    font-size:5rem;
+  }
+  .countdown-cont{
+    display:inline-block;
+  }
+  #ity7mb{
+    min-height:40px;
+    height:30px;
+  }
+  #ick9kj{
+    padding:10px;
+  }
+  #ii42nn{
+    height:59px;
+  }
+  @media (max-width: 768px){
+    .row{
+      flex-wrap:wrap;
+    }
+  }
+</style>
+<body id="i04l">
+  <div data-gjs="navbar" class="navbar" id="ik6y5">
+    <div class="navbar-container" id="idpql">
+      <a href="/" class="navbar-brand" id="i9n4i">Legal Documents</a>
+      <div id="ine4f" class="navbar-burger">
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+      </div>
+      <div data-gjs="navbar-items" class="navbar-items-c">
+        <nav data-gjs="navbar-menu" class="navbar-menu">
+          <div class="subnav">
+            <button class="subnavbtn">My Profile <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="personal.html">Personal</a>
+              <a href="family.html">Family</a>
+              <a href="medical.html">Medical</a>
+              <a href="legal.html">Legal Documents</a>
+              <a href="tandc.html">Terms</a>
+
+
+
+            </div>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">Requests <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="#company">Loan</a>
+              <a href="#team">Leave</a>
+              <a href="#careers">Passport</a>
+            </div>
+          </div>
+          <a href="#" class="navbar-menu-link" id="i2wah">Notifications</a>
+          <div class="subnav">
+            <button class="subnavbtn">Reports <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="#company">Attendance</a>
+              <a href="#team">Salary Outstanding</a>
+              <a href="#careers">Praise</a>
+              <a href="#careers">Warnings</a>
+              <a href="#careers">Leaves approved</a>
+              <a href="#careers">Passport</a>
+              <a href="#careers">Loans</a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+  
+
+<body id="i04l">
+    <div class="row">
+      <div class="cell" id="i9m4d">
+        <div id="i08d7">Visa Type:
+        </div>
+        <div id="ihhwb">Visa Number:
+        </div>
+        <div id="irail">Visa Issue Date:
+        </div>
+        <div id="i02mg">Visa Expiry Date:
+        </div>
+        <div id="ix4ye">Emirates ID No.:
+        </div>
+      </div>
+      <div class="cell" id="ifu6e">
+      </div>
+    </div>
+    <div class="row" id="ii42nn">
+      <div class="cell" id="ity7mb">
+        <div id="ick9kj">Visa Expires in
+        </div>
+      </div>
+    </div>
+    <div id="is2vc" class="countdown">
+      <span data-js="countdown" class="countdown-cont" id="il10a"><div class="countdown-block">
+        <div data-js="countdown-day" class="countdown-digit">
+        </div>
+        <div class="countdown-label" id="ihnu6s">Years
+        </div>
+        </div><div class="countdown-block">
+        <div data-js="countdown-hour" class="countdown-digit">
+        </div>
+        <div class="countdown-label" id="i8kgs7">Months
+        </div>
+        </div><div class="countdown-block">
+        <div data-js="countdown-minute" class="countdown-digit">
+        </div>
+        <div class="countdown-label" id="ij9jgg">Days
+        </div>
+        </div></span>
+      <span data-js="countdown-endtext" class="countdown-endtext"></span>
+    </div>
+  </body>
+  <script>var items = document.querySelectorAll('#is2vc');
+    for (var i = 0, len = items.length; i < len; i++) {
+      (function(){
+        var e=new Date("").getTime(),t=this.querySelector("[data-js=countdown]"),n=this.querySelector("[data-js=countdown-endtext]"),r=this.querySelector("[data-js=countdown-day]"),i=this.querySelector("[data-js=countdown-hour]"),a=this.querySelector("[data-js=countdown-minute]"),o=this.querySelector("[data-js=countdown-second]"),s=this.gjs_countdown_interval;
+        s&&s&&clearInterval(s);
+        var l=function(e,t,n,s){
+          r.innerHTML=e<10?"0"+e:e,i.innerHTML=t<10?"0"+t:t,a.innerHTML=n<10?"0"+n:n,o.innerHTML=s<10?"0"+s:s}
+        ,u=function(){
+          var r=(new Date).getTime(),i=e-r,a=Math.floor(i/864e5),o=Math.floor(i%864e5/36e5),s=Math.floor(i%36e4/6e4),u=Math.floor(i%6e4/1e3);
+          l(a,o,s,u),i<0&&(clearInterval(c),n.innerHTML="EXPIRED",t.style.display="none",n.style.display="")};
+        if(e){
+          var c=setInterval(u,1e3);
+          this.gjs_countdown_interval=c,n.style.display="none",t.style.display="",u()}
+        else l(0,0,0,0)
+      }
+       .bind(items[i]))();
+    }
+  </script>
+
+</body>
+</html>

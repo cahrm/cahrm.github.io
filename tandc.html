@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.row{
+  display:flex;
+  justify-content:flex-start;
+  align-items:stretch;
+  flex-wrap:nowrap;
+  padding:10px;
+}
+.cell{
+  min-height:75px;
+  flex-grow:1;
+  flex-basis:100%;
+}
+#idsfj{
+  color:black;
+  width:225px;
+  height:225px;
+  position:relative;
+  display:block;
+  float:left;
+  align-self:center;
+  justify-content:space-between;
+}
+#i4mfj{
+  padding:10px;
+}
+#i66cv{
+  padding:10px;
+}
+#irh5y{
+  padding:10px;
+}
+#ibx3l{
+  padding:10px;
+}
+.navbar-items-c{
+  display:inline-block;
+  float:right;
+}
+.navbar{
+  background-color:#222;
+  color:#ddd;
+  min-height:50px;
+  width:100%;
+}
+.navbar-container{
+  max-width:950px;
+  margin:0 auto;
+  width:95%;
+}
+.navbar-container::after{
+  content:"";
+  clear:both;
+  display:block;
+}
+.navbar-brand{
+  vertical-align:top;
+  display:inline-block;
+  padding:5px;
+  min-height:50px;
+  min-width:50px;
+  color:inherit;
+  text-decoration:none;
+}
+.navbar-menu{
+  padding:10px 0;
+  display:block;
+  float:right;
+  margin:0;
+}
+.navbar-menu-link{
+  margin:0;
+  color:inherit;
+  text-decoration:none;
+  display:inline-block;
+  padding:10px 15px;
+}
+.navbar-burger{
+  margin:10px 0;
+  width:45px;
+  padding:5px 10px;
+  display:none;
+  float:right;
+  cursor:pointer;
+}
+.navbar-burger-line{
+  padding:1px;
+  background-color:white;
+  margin:5px 0;
+}
+#i9ld2{
+  padding:10px;
+}
+@media (max-width: 768px){
+  .row{
+    flex-wrap:wrap;
+  }
+  .navbar-burger{
+    display:block;
+  }
+  .navbar-items-c{
+    display:none;
+    width:100%;
+  }
+  .navbar-menu{
+    width:100%;
+  }
+  .navbar-menu-link{
+    display:block;
+  }
+}
+
+/* The navigation menu */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: rgb(99, 38, 3);
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: rgb(99, 38, 3);
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+* {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  .row{
+    display:flex;
+    justify-content:flex-start;
+    align-items:stretch;
+    flex-wrap:nowrap;
+    padding:10px;
+  }
+  .cell{
+    min-height:75px;
+    flex-grow:1;
+    flex-basis:100%;
+  }
+  #ifa9c{
+    height:64px;
+  }
+  #ic33f{
+    height:0;
+    min-height:40px;
+  }
+  #ihagx{
+    height:0;
+    min-height:40px;
+  }
+  #ixca5{
+    height:64px;
+  }
+  #it348{
+    height:0;
+    min-height:40px;
+  }
+  #ibw62{
+    height:64px;
+  }
+  #iklkl{
+    padding:10px;
+  }
+  #i2e34{
+    padding:10px;
+  }
+  #imppr{
+    padding:10px;
+  }
+  #ihjxh{
+    flex-basis:30%;
+  }
+  #i5rzg{
+    flex-basis:70%;
+  }
+  #iih4z{
+    flex-basis:30%;
+  }
+  #ibpze{
+    flex-basis:70%;
+  }
+  #il3ds{
+    flex-basis:30%;
+  }
+  #it2tk{
+    flex-basis:70%;
+  }
+  #ibya9o{
+    padding:10px;
+  }
+  #ibicsq{
+    padding:10px;
+  }
+  #id6zxs{
+    padding:10px;
+  }
+  #iek25r{
+    padding:10px;
+  }
+  #i7c8nh{
+    padding:10px;
+  }
+  #ivllu1{
+    padding:10px;
+  }
+  #idu0wa{
+    padding:10px;
+  }
+  #ibg9gl{
+    padding:10px;
+  }
+  #i8mky4{
+    padding:10px;
+  }
+  #itej2g{
+    padding:10px;
+  }
+  #iti53g{
+    padding:10px;
+  }
+  #ixkcky{
+    padding:10px;
+  }
+  #ioderu{
+    padding:10px;
+  }
+  #iw1yxp{
+    padding:10px;
+  }
+  #i8ffb1{
+    padding:10px;
+  }
+  #iiqvqq{
+    padding:10px;
+  }
+  #iszrny{
+    padding:10px;
+  }
+  #ixt463{
+    padding:10px;
+  }
+  #ilyjhf{
+    padding:10px;
+  }
+  #iry1wd{
+    padding:10px;
+  }
+  #igx3p5{
+    padding:10px;
+  }
+  #i1t2r2{
+    padding:10px;
+  }
+  #i478q4{
+    padding:10px;
+  }
+  #itm2i3{
+    padding:10px;
+  }
+  #ise9x2{
+    padding:10px;
+  }
+  #in6jsb{
+    padding:10px;
+  }
+  #i2qgh8{
+    padding:10px;
+  }
+  #isiafg{
+    padding:10px;
+  }
+  #i2stuf{
+    padding:10px;
+  }
+  #i63mz9{
+    padding:10px;
+  }
+  #i63iwe{
+    padding:10px;
+  }
+  #igfr5w{
+    padding:10px;
+  }
+  #ihxv7b{
+    padding:10px;
+  }
+  #ikzfet{
+    padding:10px;
+  }
+  #icq7g1{
+    padding:10px;
+  }
+  #idxosg{
+    padding:10px;
+  }
+  #iy03ue{
+    padding:10px;
+  }
+  #i27mqj{
+    padding:10px;
+  }
+  #ioyxqr{
+    padding:10px;
+  }
+  #ipa1xb{
+    padding:10px;
+  }
+  #iupcoz{
+    padding:10px;
+  }
+  #i18uxx{
+    padding:10px;
+  }
+  #i9sqk7{
+    color:black;
+  }
+  #irxc0l{
+    padding:10px;
+  }
+
+  #textbox{
+    padding:10px;
+  }
+  @media (max-width: 768px){
+    .row{
+      flex-wrap:wrap;
+    }
+  }
+ 
+</style>
+<body id="i04l">
+  <div data-gjs="navbar" class="navbar" id="ik6y5">
+    <div class="navbar-container" id="idpql">
+      <a href="/" class="navbar-brand" id="i9n4i">Family</a>
+      <div id="ine4f" class="navbar-burger">
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+        <div class="navbar-burger-line">
+        </div>
+      </div>
+      <div data-gjs="navbar-items" class="navbar-items-c">
+        <nav data-gjs="navbar-menu" class="navbar-menu">
+          <div class="subnav">
+            <button class="subnavbtn">My Profile <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="personal.html">Personal</a>
+              <a href="family.html">Family</a>
+              <a href="medical.html">Medical</a>
+              <a href="legal.html">Legal Documents</a>
+              <a href="tandc.html">Terms</a>
+
+
+
+            </div>
+          </div>
+          <div class="subnav">
+            <button class="subnavbtn">Requests <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="#company">Loan</a>
+              <a href="#team">Leave</a>
+              <a href="#careers">Passport</a>
+            </div>
+          </div>
+          <a href="#" class="navbar-menu-link" id="i2wah">Notifications</a>
+          <div class="subnav">
+            <button class="subnavbtn">Reports <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+              <a href="#company">Attendance</a>
+              <a href="#team">Salary Outstanding</a>
+              <a href="#careers">Praise</a>
+              <a href="#careers">Warnings</a>
+              <a href="#careers">Leaves approved</a>
+              <a href="#careers">Passport</a>
+              <a href="#careers">Loans</a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+<body id="i04l">
+    <div class="row" id="ifa9c">
+      <div class="cell" id="ic33f">
+        <div id="iklkl">Whether the following services are provided form the company or not:
+        </div>
+      </div>
+    </div>
+    <div class="row" id="iqt2f">
+      <div class="cell" id="ihjxh">
+        <div id="ibya9o">Transport Facilities
+        </div>
+        <div id="idu0wa">Accommodation Facilities:
+        </div>
+        <div id="ivllu1">WIFI Accessibility within the premises:
+        </div>
+        <div id="i7c8nh">Company&#039;s SIM arrangement:
+        </div>
+        <div id="iek25r">Workplace (PC included):
+        </div>
+        <div id="id6zxs">Medical Insurance Card:
+          <br/>
+        </div>
+        <div id="ibicsq">Emergency Leave:
+        </div>
+      </div>
+      <div class="cell" id="i5rzg">
+        <div id="textbox">Insert your text here
+        </div>
+        <div id="isiafg">Insert your text here
+        </div>
+        <div id="i2qgh8">Insert your text here
+        </div>
+        <div id="in6jsb">Insert your text here
+        </div>
+        <div id="ise9x2">Insert your text here
+        </div>
+        <div id="itm2i3">Insert your text here
+        </div>
+        <div id="i478q4">Insert your text here
+        </div>
+      </div>
+    </div>
+    <div class="row" id="ibw62">
+      <div class="cell" id="it348">
+        <div id="i2e34">Payroll
+        </div>
+      </div>
+    </div>
+    <div class="row" id="izv99x">
+      <div class="cell" id="il3ds">
+        <div id="ibg9gl">Agreed Salary (AED/Monthly):
+        </div>
+        <div id="iiqvqq">Agreed housing allowance (AED/Monthly):
+        </div>
+        <div id="i8ffb1">Agreed other allowances (AED/Monthly):
+        </div>
+        <div id="iw1yxp">Payment Modalities:
+        </div>
+        <div id="ioderu">Advance Payment Modalities:
+        </div>
+        <div id="ixkcky">Payroll deduction (per hour):
+        </div>
+        <div id="iti53g">Increment Salary Agreement:
+        </div>
+        <div id="itej2g">Increment Salary Amount (Percentage of Salary):
+        </div>
+        <div id="i8mky4">Vacation Leave Agreement:
+        </div>
+      </div>
+      <div class="cell" id="it2tk">
+        <div id="i2stuf">Insert your text here
+        </div>
+        <div id="iy03ue">Insert your text here
+        </div>
+        <div id="idxosg">Insert your text here
+        </div>
+        <div id="icq7g1">Insert your text here
+        </div>
+        <div id="ikzfet">Insert your text here
+        </div>
+        <div id="ihxv7b">Insert your text here
+        </div>
+        <div id="igfr5w">Insert your text here
+        </div>
+        <div id="i63iwe">Insert your text here
+        </div>
+        <div id="i63mz9">Insert your text here
+        </div>
+      </div>
+    </div>
+    <div class="row" id="ixca5">
+      <div class="cell" id="ihagx">
+        <div id="imppr">Job Agreement:
+        </div>
+      </div>
+    </div>
+    <div class="row" id="i06n7">
+      <div class="cell" id="iih4z">
+        <div id="iszrny">Allocated Dept.:
+        </div>
+        <div id="igx3p5">Work and Task Description:
+        </div>
+        <div id="iry1wd">Assigned Post in Dept.:
+        </div>
+        <div id="ilyjhf">Working Hours:
+        </div>
+        <div id="ixt463">Break Timings:
+        </div>
+      </div>
+      <div class="cell" id="ibpze">
+        <div id="i27mqj">Insert your text here
+        </div>
+        <div id="i18uxx">Insert your text here
+        </div>
+        <div id="iupcoz">Insert your text here
+        </div>
+        <div id="ipa1xb">Insert your text here
+        </div>
+        <div id="ioyxqr">Insert your text here
+        </div>
+      </div>
+    </div>
+    <div class="row" id="i0z9xi">
+      <div class="cell" id="i0zf1y">
+        <div id="irxc0l">I agree to the aforementioned conditions and pledge to abide them at all costs under the statutes of the land. 
+        </div>
+        <img id="i9sqk7" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3R5bGU9ImZpbGw6IHJnYmEoMCwwLDAsMC4xNSk7IHRyYW5zZm9ybTogc2NhbGUoMC43NSkiPgogICAgICAgIDxwYXRoIGQ9Ik04LjUgMTMuNWwyLjUgMyAzLjUtNC41IDQuNSA2SDVtMTYgMVY1YTIgMiAwIDAgMC0yLTJINWMtMS4xIDAtMiAuOS0yIDJ2MTRjMCAxLjEuOSAyIDIgMmgxNGMxLjEgMCAyLS45IDItMnoiPjwvcGF0aD4KICAgICAgPC9zdmc+"/>
+      </div>
+    </div>
+  </body>
+
+</body>
+</html>
